@@ -50,4 +50,29 @@ public class MarsRoverTest {
         mars_rover.receiveSingleCommand('R');
         assertThat(mars_rover.getCoordinates().getDirection()).isEqualTo(Direction.EAST);
     }
+
+    @Test
+    public void receiveSingleCommandShouldIgnoreCase() throws Exception {
+        mars_rover.receiveSingleCommand('r');
+        assertThat(mars_rover.getCoordinates().getDirection()).isEqualTo(Direction.EAST);
+    }
+
+    @Test(expected = Exception.class)
+    public void receiveSingleCommandShouldThrowExceptionWhenCommandIsUnknown() throws Exception {
+        mars_rover.receiveSingleCommand('Q');
+    }
+
+    @Test
+    public void receiveCommandsShouldBeAbleToReceiveMultipleCommands() throws Exception {
+        int expected = x.getPosition() + 1;
+        mars_rover.receiveCommands("RFR");
+        assertThat(mars_rover.getCoordinates().getX().getPosition()).isEqualTo(expected);
+        assertThat(mars_rover.getCoordinates().getDirection()).isEqualTo(Direction.SOUTH);
+    }
+
+    @Test
+    public void positionShouldReturnXYAndDirection() throws Exception {
+        mars_rover.receiveCommands("LFFFRFF");
+        assertThat(mars_rover.getPosition()).isEqualTo("8 X 4 N");
+    }
 }
