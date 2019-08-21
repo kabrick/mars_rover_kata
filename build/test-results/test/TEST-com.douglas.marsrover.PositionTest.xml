@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.douglas.marsrover.PositionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-08-21T06:36:22" hostname="posefx" time="0.066">
+<testsuite name="com.douglas.marsrover.PositionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-08-21T07:11:24" hostname="posefx" time="0.004">
   <properties/>
-  <testcase name="testDecreasePositionByOne" classname="com.douglas.marsrover.PositionTest" time="0.064"/>
+  <testcase name="testDecreasePositionByOne" classname="com.douglas.marsrover.PositionTest" time="0.002"/>
   <testcase name="testPositionAssignment" classname="com.douglas.marsrover.PositionTest" time="0.0"/>
   <testcase name="testIncreasePositionByOne" classname="com.douglas.marsrover.PositionTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
