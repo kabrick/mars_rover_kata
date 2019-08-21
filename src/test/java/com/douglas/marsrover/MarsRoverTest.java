@@ -24,4 +24,30 @@ public class MarsRoverTest {
     public void newInstanceShouldSetRoverCoordinatesAndDirection() {
         assertThat(mars_rover.getCoordinates()).isEqualToComparingFieldByField(mars_rover_coordinates);
     }
+
+    @Test
+    public void receiveSingleCommandShouldMoveForwardWhenCommandIsF() throws Exception {
+        int expected = y.getPosition() + 1;
+        mars_rover.receiveSingleCommand('F');
+        assertThat(mars_rover.getCoordinates().getY().getPosition()).isEqualTo(expected);
+    }
+
+    @Test
+    public void receiveSingleCommandShouldMoveBackwardWhenCommandIsB() throws Exception {
+        int expected = y.getPosition() - 1;
+        mars_rover.receiveSingleCommand('B');
+        assertThat(mars_rover.getCoordinates().getY().getPosition()).isEqualTo(expected);
+    }
+
+    @Test
+    public void receiveSingleCommandShouldTurnLeftWhenCommandIsL() throws Exception {
+        mars_rover.receiveSingleCommand('L');
+        assertThat(mars_rover.getCoordinates().getDirection()).isEqualTo(Direction.WEST);
+    }
+
+    @Test
+    public void receiveSingleCommandShouldTurnRightWhenCommandIsR() throws Exception {
+        mars_rover.receiveSingleCommand('R');
+        assertThat(mars_rover.getCoordinates().getDirection()).isEqualTo(Direction.EAST);
+    }
 }
