@@ -17,11 +17,11 @@ public class Position {
         this.position = position;
     }
 
-    public int getMaximum_position() {
+    public int getMaximumPosition() {
         return maximum_position;
     }
 
-    public void setMaximum_position(int maximum_position) {
+    public void setMaximumPosition(int maximum_position) {
         this.maximum_position = maximum_position;
     }
 }

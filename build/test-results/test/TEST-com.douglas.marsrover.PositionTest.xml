@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.douglas.marsrover.PositionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-21T06:27:27" hostname="posefx" time="0.055">
+  <properties/>
+  <testcase name="testPositionAssignment" classname="com.douglas.marsrover.PositionTest" time="0.055"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
