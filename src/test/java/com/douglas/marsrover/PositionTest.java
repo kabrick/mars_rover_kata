@@ -22,4 +22,16 @@ public class PositionTest {
         assertThat(position.getPosition()).isEqualTo(location);
         assertThat(position.getMaximumPosition()).isEqualTo(maxLocation);
     }
+
+    @Test
+    public void testIncreasePositionByOne() {
+        int expected = position.getPosition() + 1;
+        assertThat(position.getForwardPosition()).isEqualTo(expected);
+    }
+
+    @Test
+    public void testDecreasePositionByOne() {
+        int expected = position.getPosition() - 1;
+        assertThat(position.getBackwardPosition()).isEqualTo(expected);
+    }
 }
