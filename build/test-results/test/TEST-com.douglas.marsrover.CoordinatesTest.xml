@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.douglas.marsrover.CoordinatesTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2019-08-21T07:11:24" hostname="posefx" time="0.076">
+<testsuite name="com.douglas.marsrover.CoordinatesTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2019-08-21T07:27:08" hostname="posefx" time="0.086">
   <properties/>
-  <testcase name="testMoveBackwardWhenDirectionIsNorth" classname="com.douglas.marsrover.CoordinatesTest" time="0.06"/>
+  <testcase name="testMoveBackwardWhenDirectionIsNorth" classname="com.douglas.marsrover.CoordinatesTest" time="0.065"/>
   <testcase name="testMoveBackwardWhenDirectionIsSouth" classname="com.douglas.marsrover.CoordinatesTest" time="0.001"/>
   <testcase name="testMoveBackwardWhenDirectionIsEast" classname="com.douglas.marsrover.CoordinatesTest" time="0.001"/>
   <testcase name="testMoveBackwardWhenDirectionIsWest" classname="com.douglas.marsrover.CoordinatesTest" time="0.001"/>
@@ -11,7 +11,7 @@
   <testcase name="testMoveForwardWhenDirectionIsNorth" classname="com.douglas.marsrover.CoordinatesTest" time="0.001"/>
   <testcase name="testMoveForwardWhenDirectionIsSouth" classname="com.douglas.marsrover.CoordinatesTest" time="0.002"/>
   <testcase name="testXAndYAssignment" classname="com.douglas.marsrover.CoordinatesTest" time="0.001"/>
-  <testcase name="testDirectionAssignment" classname="com.douglas.marsrover.CoordinatesTest" time="0.001"/>
+  <testcase name="testDirectionAssignment" classname="com.douglas.marsrover.CoordinatesTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
